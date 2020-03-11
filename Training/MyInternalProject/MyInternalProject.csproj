@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F5BFA56A-2290-4557-AF1C-0C048668164E}</ProjectGuid>
+    <ProjectGuid>{955F33A4-7F17-48C6-AF59-40F710A4D008}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ClassesTraining</RootNamespace>
-    <AssemblyName>ClassesTraining</AssemblyName>
+    <RootNamespace>MyInternalProject</RootNamespace>
+    <AssemblyName>MyInternalProject</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,20 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\MyClass.cs" />
-    <Compile Include="Models\MyNewClass.cs" />
+    <Compile Include="Models\MyInternalClass.cs" />
+    <Compile Include="Models\MyPublicClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\MyInternalProject\MyInternalProject.csproj">
-      <Project>{955f33a4-7f17-48c6-af59-40f710a4d008}</Project>
-      <Name>MyInternalProject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
