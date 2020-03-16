@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.156
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AboutClasses", "AboutClasses", "{109B0263-1373-4D1F-8FC1-5B62388C1823}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AboutOthers", "AboutOthers", "{2E21DBA4-A78A-41BE-90FA-3E387961A9BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomTraining", "RandomTraining\RandomTraining.csproj", "{D339AEA0-F77E-41B1-90F1-F4C7A7743F6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Anita", "Anita", "{F394D33C-3234-4CB8-94A5-592552F1B11F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,7 @@ Global
 		{88612EFA-2F55-4691-9C0B-42BCD41AD129} = {37C3196A-5AE5-4ECC-B579-E66F6ED566FF}
 		{9250B4C3-EE48-44E3-B321-2BB870BD0992} = {930512EB-4B85-46FB-9AB8-4044C72E03C6}
 		{D339AEA0-F77E-41B1-90F1-F4C7A7743F6C} = {2E21DBA4-A78A-41BE-90FA-3E387961A9BC}
+		{F394D33C-3234-4CB8-94A5-592552F1B11F} = {37C3196A-5AE5-4ECC-B579-E66F6ED566FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06305904-9C02-4D7E-8CEB-B560A600DD78}
