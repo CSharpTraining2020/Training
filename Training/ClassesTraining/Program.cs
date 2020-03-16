@@ -8,21 +8,27 @@ using System.Threading.Tasks;
 
 namespace ClassesTraining
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			var myClass = new MyClass();
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /// Inicjalizacja - utworzenie nowej instancji(jednostki) obiektu(encji) za pomocą słówka "new"
+            /// Do inicjalizacji wykorzystywane są konstruktory zdefiniowane w klasie inicjalizowanego obiektu
+            var myClass = new MyClass();
+
+            /// Metoda instancyjna - metoda wywoływana na instancji(jednostce) obiektu(encji).
+            /// Aby wykonać metodę instancyjną wcześniej należy zainicjalizować obiekt(encje) za pomocą słówka "new"
+            /// Metody instancyjne zdefiniowane są w klasie obiektu
 			myClass.DoSomething();
+            myClass.DoSomethingInternal();
 
-			myClass.DoSomethingInternal();
-			MyClass.MyStaticMethod();
+            /// Metoda statyczna - metoda wywoływana na typie(klasie) obiektu(encji)
+            /// Aby wykonać metodę statyczną należy wykorzystać typ(klasę) obiektu.
+            /// Metod statycznych nie można wywoływać za pomocą instancji(jednostki) obiektu(encji)
+            /// Metody statyczne zdefiniowane są w klasie obiektu
+            MyClass.MyStaticMethod();
 
-
-			var myPublicClass = new MyPublicClass();
-
-
-			Console.ReadLine();
-		}
-	}
+            Console.ReadLine();
+        }
+    }
 }
