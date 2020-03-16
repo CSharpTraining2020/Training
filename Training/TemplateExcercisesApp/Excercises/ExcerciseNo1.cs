@@ -11,6 +11,12 @@ namespace TemplateExcercisesApp.Excercises
         public void Execute()
         {
             Console.WriteLine("This is Execute method of ExerciseNo1");
+			PrivateMethod();
         }
+
+		private void PrivateMethod()
+		{
+
+		}
     }
 }

@@ -13,26 +13,38 @@ namespace DebugTutorial
 			Console.WriteLine("To jest debug tutorial");
 			Console.WriteLine("Aplikacja ta oblicza czy podana liczba jest liczbą pierwszą czy nie");
 
-			Console.WriteLine("Podaj liczbę: ");
-			var readedText = Console.ReadLine();
-
-			int parsedInteger;
-			var parseResult = int.TryParse(readedText, out parsedInteger);
-
-			if (parseResult)
+			bool endLoop = true;
+			
+			while(endLoop)
 			{
-				var isPrime = CheckIfNumberIsPrime(parsedInteger);
+				Console.WriteLine("Podaj liczbę: ");
+				var readedText = Console.ReadLine();
 
-				if (isPrime)
+				if (readedText.ToLower() == "q")
 				{
-					Console.WriteLine($"Podana liczba {parsedInteger} jest liczbą pierwszą");
+					endLoop = false;
+					continue;
 				}
-				else
+
+				int parsedInteger;
+				var parseResult = int.TryParse(readedText, out parsedInteger);
+
+				if (parseResult)
 				{
-					Console.WriteLine($"Podana liczba {parsedInteger} nie jest liczbą pierwszą");
+					var isPrime = CheckIfNumberIsPrime(parsedInteger);
+
+					if (isPrime)
+					{
+						Console.WriteLine($"Podana liczba {parsedInteger} jest liczbą pierwszą");
+					}
+					else
+					{
+						Console.WriteLine($"Podana liczba {parsedInteger} nie jest liczbą pierwszą");
+					}
 				}
 			}
 
+			Console.WriteLine("Koniec");
 			Console.ReadLine();
 		}
 
