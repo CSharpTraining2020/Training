@@ -29,7 +29,7 @@ namespace ExcercisesDescriptions
              *
              * Stwórz aplikację konsolową, która będzie losowała liczby.
              * Zakres liczb jak i ich ilość powinna być wprowadzana przez użytkownika.
-             * Min liczba to -1000, Max liczba to 1000, zakres to od 3 do 15.
+             * Min liczba to -1000, Max liczba to 1000, ilość to od 3 do 15.
              * Stwórz zabezpieczenia aby użytkownik nie mógł podać niedozwolonych wartości (tekst, znaki specjalne, wartości z poza zakresów).
              * Dopóki użytkownik nie wprowadzi poprawnej liczby program powinien ciągle pytać użytkownika o wprowadzenie wartości.
              * Wynikiem powinna być wyświetlona lista/tablica wartości wylosowanych przez program.
