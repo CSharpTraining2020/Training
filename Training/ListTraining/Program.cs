@@ -12,6 +12,8 @@ namespace ListTraining
         {
             #region WSTĘP
 
+            #region LISTY
+
             /// Listy są tzw. typami generycznymi
             /// Oznacza to, że typ listy jest ustalany na podstawie typu generycznego wprowadzonego w nawiasach < >
             /// Typ listy ustala się podczas inicjalizacji zmiennej listowej.
@@ -20,6 +22,55 @@ namespace ListTraining
             /// To jest przykład najprostszej inicjalizacji listy, która będzie przyjmować elementy o typie string
             /// Tak utworzona lista jest pusta i nie posiada żadnych elementów.
             var stringList = new List<string>();
+
+            #endregion
+
+            #region TABLICE
+
+            /// Tablice są również typami generycznymi
+            /// Są jednak rzadziej stosowane z uwagi na wiele korzyści jakie posiadają list, a nie posiadają tablice
+            /// Występują jednak w kodzie na tyle często, że należy wiedzieć jak obchodzić się z tablicami
+            /// Tak jak listy typ tablicy jest ustalany na podstawie typu generycznego
+            /// Tablice deklarujemy za pomocą typu elementów oraz nawiasów kwadratowych [ ]
+            /// Podczas deklaracji tabeli należy określić ile elementów tablica będzie przechowywać
+            /// Ilości elementów w liście nie można zmienić po deklaracji ani przekroczyć
+            var arrayString = new string[10];
+
+            #endregion
+
+            #endregion
+
+            #region WŁAŚCIWOŚCI
+
+            #region COUNT / COUNT() / LENGTH 
+
+            /// Każda lista lub też tablica udostępnia sposób sprawdzenia ile elementów znajduje się obecnie w liście
+            ///     lub jaka jest długość tablicy
+            /// Informacja ta jest pomocna przy tworzeniu np. pętl iterujących po listach/tablicach
+            ///
+            /// LENGTH:
+            /// Każda tablica posiada właściwość Length, która mówi jak "długa" jest tablica
+            /// Length mówi jak "długa" jest tablica, a nie ile ma elementów - jest to ważna różnica
+            /// Tablica "intArray" nie posiada żadnego elementu, a jej długość jest równa 10
+            /// Dlatego też zmienna "intArrayLen" będzie także równa 10
+            /// Długość nie zmieni się również wtedy gdy wpiszemy pierwszy lub kolejne elementy do tablicy
+
+            var intArray = new int[10];
+            var intArrayLen = intArray.Length;
+
+            /// COUNT i COUNT()
+            /// Wszystkie listy posiadają albo właściwość Count albo metodę Count()
+            /// Która, lista posiada, którą "rzecz" jest zależne od typu listy
+            /// Listy List<T> zawsze posiadają właściwość Count
+            /// I metoda i właściwość zawsze zwracają dokładną ilość elementów w liście
+
+            List<string> countries = new List<string>
+                { "Polska", "Niemcy", "Czechy", "Słowacja", "Rosja", "Białoruś", "Ukraina", "Litwa"};
+
+            /// zmienna countriesCount jest równa 8
+            int countriesCount = countries.Count;
+
+            #endregion
 
             #endregion
 
