@@ -31,12 +31,22 @@ namespace LoopPractise
                 new Person {Age = 76, FirstName = "Benedykt", LastName = "Papieski"}
             };
 
-            // zadanie 1. wyswietlie elemnety z listy / 2 sposoby for i foreach 
+            /// zadanie 1. 
+			/// wyswietlić wszystkie imiona z list namesList z listy / 2 sposoby for i foreach 
             for (int i = 0; i < namesList.Count; i++) //wchodze do listy names. .COunt jest dla List<>
             {
                 Console.WriteLine(namesList[i]);
             }
-            double result=0;
+
+			foreach (string names in namesList)
+			{
+				Console.WriteLine(names);
+			}
+
+			/// zadanie 2.
+			/// Wyświetlić wszystkie nazwy krajów z listy countriesList oraz długość ich nazw
+			/// Obliczyć średnią długość nazw krajó
+			double result=0;
             int sum=0;
             for(int i = 0; i < countriesList.Count; i++) 
             {
@@ -48,19 +58,18 @@ namespace LoopPractise
             result = sum / countriesList.Count;
             Console.WriteLine(result); // srednia długosc krajów w nazwach 
 
-            foreach (string names in namesList)
-            {
-                Console.WriteLine(names);
-            }
-
+			/// zadanie 3.
+			/// Wyświetl w pętli liczby od 1 do 15
             for (int i = 1; i <= 15; i++) // wyswietlenie od 1 do 15
             {
                 Console.WriteLine(i);
 
             }
 
+			/// zadanie 4.
+			/// Wyświetlić osobno każdą literkę z podanego zdania
+			/// Wyświetlić dodatkowo tylko literki 'a'
             string text = "Ala ma kota"; // wysweitlic kaza literke a pozycja = dlugosc znakow
-
             for (int a = 0; a < text.Length; a++)
             {
                 Console.WriteLine(text[a]);
@@ -68,10 +77,10 @@ namespace LoopPractise
                 {
                     Console.WriteLine(a);
                 }
-
-
             }
 
+			/// zadanie 5.
+			/// Wyświetlić tylko imiona zawierające literę 'a'
             foreach (string word in namesList) // idziemy po slowach z listy 
             {
                 for (int i = 0; i < word.Length; i++) // idziemy po literach w danym słowie
@@ -82,8 +91,6 @@ namespace LoopPractise
                         break;//przerywa petle w momencie kiedy znajdzie w slowie litere a. Konczy oetle w ktorej sie znajduje
                     }
                 }
-
-
             }
 
             foreach (var item in namesList)
@@ -95,10 +102,9 @@ namespace LoopPractise
 
             }
 
-           
-
-
-            //Losowanie liczb od 0 do 100 ktore sa podzielne przez 8 
+            /// zadanie 6.
+			/// Losowanie liczb od 0 do 100 ktore sa podzielne przez 8 
+			/// Należy losować liczby tak długo aż natrafimy na pierwszą liczbę podzielną przez 8
             var r = new Random();
             bool checkRange = true;
             while (checkRange)
@@ -117,6 +123,62 @@ namespace LoopPractise
                 }
 
             }
+
+			/// Zadanie 7.
+			/// Załóż pustą listę i w pętli wylosuj i wpisz do tej list 20 liczb z zakresu od 0 do 1000
+			/// Wypisz wylosowane liczby w konsoli w 1 linii
+			
+
+
+			/// Zadanie 8.
+			/// Na podstawie listy z zadania 7 wyżej wyszukaj w tej liście liczby większe od 250
+			/// Wypisz te liczby w konsoli w 1 linii
+			/// Nie używaj wyrażeń labmda
+			
+
+
+			/// Zadanie 9.******
+			/// Wykonaj poprzednie zadanie z wykorzystaniem wyrażenia lambda
+			
+
+
+			/// Zadanie 10.
+			/// Na podstawie listy z zadania powyżej wyszukaj pierwszą liczbę większą od 100
+			/// Wypisz w konsoli indeks tej liczby i jaka to liczba
+			/// Nie używaj wyrażeń lambda
+			
+
+
+			/// Zadanie 11.******
+			/// Wykonaj poprzednie zadanie z wykorzystaniem wyrażenia lambda
+			
+
+
+			/// Zadanie 12.
+			/// Znaleźć i wypisać w konsoli wszystkie lata przestępne jakie były w XX wieku
+			/// Zaczynając od 1900 do 1999
+			
+
+
+			/// Zadanie 13.***
+			/// Stworzyć pustą listę integerów.
+			/// Do tej listy należy wpisać sumę liczb, z których składają się lata, które minęły lub trwają z XXI wieku
+			/// Np. rok 2000 ma 4 liczby - 2, 0, 0, 0 - suma tych liczb wynosi 2 - wpisujemy 2 do listy
+			/// rok 2001 ma 4 liczby - 2, 0, 0, 1 - suma tych liczb wynosi 3 - wpisujemy 3 do listy
+			/// itd
+			/// Wyliczone wartości wypisać w jednej linii
+			/// TIP: 
+			///		Pamiętaj że każdą liczbę np. 2000 można przerobić na tekst metodą ToString() - 2000.ToString() = "2000"
+			///		Pamiętaj że pętlami można przechodzić po tekście jak po listach i tablicach
+			///		Pamiętaj że tekst możesz parsować na liczby
+			///		Pamiętaj że aby spradzić bieżącą datę można posłużyć się DateTime.Today
+			///		Pamiętaj że każda zmienna DateTime posiada właściwość Year, która zwraca wartość roku z daty
+			///		Parsowanie i wszystkie typy wartościowe opisałem w ValueTypesTraining
+
+			/// Zadanie 14.
+			/// Na podstawie lsty z zadania 13 obliczyć średnią wartość wartości w liście
+			/// Obliczoną wartość wypisać w konsoli
+
 
             Console.ReadLine();
         }
