@@ -6,7 +6,7 @@ namespace ExcerciseSelector
     {
         public ExcerciseNo1()
         {
-            // konstruktory klasy 
+            // konstruktor klasy 
 
         }
 
