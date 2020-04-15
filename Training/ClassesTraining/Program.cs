@@ -14,6 +14,7 @@ namespace ClassesTraining
         {
             /// Inicjalizacja - utworzenie nowej instancji(jednostki) obiektu(encji) za pomocą słówka "new"
             /// Do inicjalizacji wykorzystywane są konstruktory zdefiniowane w klasie inicjalizowanego obiektu
+            /// klasa=typ referencyjny(sterta= duza ilosc pamięci)=obiekt=encja
             var myClass = new MyClass();
 
             /// Metoda instancyjna - metoda wywoływana na instancji(jednostce) obiektu(encji).
